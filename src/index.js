@@ -4,16 +4,19 @@
 // A parede tem 4 metros de altura e 5 metros de largura.
 
 //Para calcular a área de um retângulo, usamos a seguinte fórmula:
-// area = largura * altura;
+
+var altura = 10;
+var largura = 9;
+
+var area = largura * altura;
+
+
 
 // Dimensões da parede (largura e altura em metros)
-var largura = 5;
-var altura = 4;
 
-// Calculando a área da parede
-
+// Calculando a área d
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log("A área da parede é:" + area);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -33,7 +36,7 @@ var sobrenome = "Silva";
        //seu código
 
 // Exibindo a mensagem no console
-console.log();
+console.log(`Boas vindas ${nome} ${sobrenome}`);
 
 
 //-------------------------------------------------------------------------------------------------
@@ -47,15 +50,16 @@ console.log();
 // considerando que todos os anos têm 365 dias.
 
 // Idade do funcionário em anos
-var idadeEmAnos = 30;
+var idadeEmAnos = 27;
 
 // Calculando anos em dias
-  
+  var dias = idadeEmAnos * 365;
       //seu código
 
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(`O funcionário viveu aproximadamente ${dias}`);
+
 
 //-------------------------------------------------------------------------------------------------
 
@@ -71,9 +75,13 @@ console.log("O funcionário viveu aproximadamente... dias");
 var duracaoEmMinutos = 135;
 
 // Calculando horas e minutos
-  
+  var duracaoEmHora = Math.floor (duracaoEmMinutos/60);
+  var minutos = duracaoEmMinutos % 60;
       //seu código
 
 
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log(`O evento durou ${duracaoEmHora} horas e ${minutos} minutos.`);
+
+
+
